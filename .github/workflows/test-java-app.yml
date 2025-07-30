@@ -1,8 +1,12 @@
+name: Java App CI
+
+on:
+  push:
+    branches: [ main ]
+
 jobs:
   build:
     uses: its-kapil/reusable-templates/ci-cd/github-actions/workflows/build.yml@main
     with:
       language: java
-    defaults:
-      run:
-        working-directory: app
+      working-directory: app
