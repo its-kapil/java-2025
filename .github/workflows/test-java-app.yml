@@ -1,4 +1,4 @@
-name: Java App CI
+name: Java App CI file
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: its-kapil/reusable-templates/ci-cd/github-actions/workflows/build.yml@main
+    uses: its-kapil/reusable-templates/.github/workflows/build.yml@main
     with:
       language: java
       working-directory: app
